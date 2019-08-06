@@ -1,0 +1,31 @@
+<mat-grid-list cols="4">
+<mat-grid-tile *ngFor="let r of repos">
+<mat-card class="outer-card" style="background-color: gray">
+<mat-card class="example-card" >
+  
+  
+      <mat-card-title align="center">{{r.name}}</mat-card-title>
+      <mat-card-subtitle align="center">{{r.language}}</mat-card-subtitle>
+    
+    
+    <mat-divider></mat-divider>
+
+    <mat-card-content align="center">
+      <p>
+          {{r.description}}
+      </p>
+    </mat-card-content> 
+
+    <mat-divider></mat-divider>
+
+    <mat-card-footer align="center"><a href={{r.html_url}}>Link to repository</a></mat-card-footer>
+  
+  <br/>
+
+</mat-card>
+</mat-card>
+</mat-grid-tile>
+</mat-grid-list>
+  
+
+  

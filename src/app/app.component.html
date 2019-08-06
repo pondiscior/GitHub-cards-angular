@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+    <!-- <app-card ></app-card> -->
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false"
+                             hideToggle=false>
+          <mat-expansion-panel-header>
+           <mat-panel-title>
+              GitHub Repository Cards for user glf30
+            </mat-panel-title>
+            <mat-panel-description>
+              Drop-down status: {{panelOpenState ? 'open' : 'closed'}}
+            </mat-panel-description> 
+          </mat-expansion-panel-header>
+          <p><app-card></app-card></p>
+        </mat-expansion-panel>
+
+    
+
+<router-outlet></router-outlet>
